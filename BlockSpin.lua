@@ -58,7 +58,7 @@ SubmitBtn.Size = UDim2.new(0.8, 0, 0, 35)
 SubmitBtn.Position = UDim2.new(0.1, 0, 0, 95)
 SubmitBtn.BackgroundColor3 = Color3.fromRGB(70, 20, 90)
 SubmitBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
-SubmitBtn.Text = "POTVRDIT HESLO"
+SubmitBtn.Text = "POTVRDIT HESLO zmrde"
 SubmitBtn.TextSize = 12
 SubmitBtn.Font = Enum.Font.Code
 SubmitBtn.Parent = LoginFrame
@@ -66,13 +66,13 @@ local SubCorner = Instance.new("UICorner") SubCorner.CornerRadius = UDim.new(0, 
 
 -- Hlavní script se spustí až po správném zadání hesla
 SubmitBtn.MouseButton1Click:Connect(function()
-    if PassBox.Text == "123" then
+    if PassBox.Text == "676767" then
         LoginGui:Destroy()
         
         -- HLAVNÍ SCRIPT
         local camlockEnabled = false
         local fullEspEnabled = true
-        local fovRadius = 150
+        local fovRadius = 1400
         local noFogEnabled = false
         local menuVisible = true
         local spectatorTarget = nil
@@ -98,7 +98,7 @@ SubmitBtn.MouseButton1Click:Connect(function()
         local ToggleCorner = Instance.new("UICorner") ToggleCorner.CornerRadius = UDim.new(0, 10) ToggleCorner.Parent = ToggleMenuBtn
         local ToggleStroke = Instance.new("UIStroke") ToggleStroke.Color = Color3.fromRGB(150, 50, 220) ToggleStroke.Thickness = 2 ToggleStroke.Parent = ToggleMenuBtn
 
-        -- Hlavní okno Express Hubu v6.9 PRO
+        -- Hlavní okno vojta gay 12
         local MainFrame = Instance.new("Frame")
         MainFrame.Size = UDim2.new(0, 540, 0, 360)
         MainFrame.Position = UDim2.new(0.5, -270, 0.5, -180)
@@ -134,7 +134,7 @@ SubmitBtn.MouseButton1Click:Connect(function()
         RunService.RenderStepped:Connect(function()
             local ping = 0
             pcall(function() ping = math.floor(LocalPlayer:GetNetworkPing() * 1000) end)
-            StatsText.Text = string.format("FPS: 60 | Ping: %dms", ping)
+            StatsText.Text = string.format("FPS: 1000 | Ping: %dms", ping)
         end)
 
         -- Plovoucí tlačítko na Camlock
@@ -231,10 +231,8 @@ SubmitBtn.MouseButton1Click:Connect(function()
         local tabMain = createTabButton("⚙️ Main", 40)
         local tabCombat = createTabButton("🎯 Combat", 80)
         local tabTeleport = createTabButton("📍 Teleport", 120)
-        local tabSpawner = createTabButton("🔫 Spawner", 160)
         local tabSpectate = createTabButton("👁️ Spectate", 200)
         local tabPlayers = createTabButton("👥 Players", 240)
-        local tabOther = createTabButton("📦 Other", 280)
 
         local function createSection()
             local f = Instance.new("ScrollingFrame")
